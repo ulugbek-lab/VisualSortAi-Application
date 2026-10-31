@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply m-0 min-w-80 bg-[#f7f8fa] text-[#263141] antialiased dark:bg-slate-950 dark:text-slate-100;
+  }
+  button:not(:disabled),
+  summary {
+    @apply cursor-pointer;
+  }
+  button:focus-visible,
+  a:focus-visible,
+  summary:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    @apply outline-2 outline-offset-4 outline-orange-500;
+  }
+  ::selection {
+    @apply bg-orange-100;
+  }
+}

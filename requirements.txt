@@ -1,0 +1,7 @@
+# Direct backend dependencies from the verified Python 3.13 environment.
+fastapi==0.162.0
+uvicorn==0.54.0
+torch==2.15.0
+torchvision==0.29.2
+Pillow==13.0.0
+python-multipart==0.0.32
