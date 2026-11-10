@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/predict",
+      "destination": "https://visualsort-api.triporaa.tech/predict"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
